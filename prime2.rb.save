@@ -1,0 +1,13 @@
+=begin
+prime number using for loop
+=end
+puts "enter number to check prime or not:"
+num=gets.chomp.to_i
+temp=0
+for i in 2..num-1
+if (num%i==0)
+temp=temp+1
+end
+end
+if temp==0
+puts "#{num} is "
