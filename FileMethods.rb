@@ -1,0 +1,6 @@
+puts File.rename("File.txt","File1.txt")
+puts File.file?("File1.txt")
+puts File.file?("File.txt")
+puts File.readable?("File1.txt")
+puts File.writable?("File1.txt")
+puts File.delete("File1.txt")
