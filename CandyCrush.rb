@@ -19,13 +19,12 @@ c=gets.chomp.to_i
         $arr[r][c-1] = nil
         $arr[r][c-2] = nil
         
-        if $arr[r][c] == $arr[r][c] && $arr[r+1][c] == $arr[r+2][c]
+    elsif $arr[r][c] == $arr[r][c] && $arr[r+1][c] == $arr[r+2][c]
             $arr[r][c] = nil
             $arr[r+1][c] = nil
             $arr[r+2][c] = nil
    
-puts "first column deleted..."
-puts
+
     
 else
     puts "No nil and zero elements in array."
