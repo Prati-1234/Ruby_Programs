@@ -2,12 +2,7 @@ class CandyCrush
 def assign_data
     $arr=[[1,1,0,nil,3,5],[8,9,2,2,0],[1,0,3,3,0],[1,9,0,2,0],[2,3,4,8,0],[5,8,9,0,6]]
 
-for i in 0..5
-    for j in 0..5
-       print  "#{$arr[i][j]}\t"
-end
-puts
-end
+    $arr.each_with_index { |item, idx| puts "#{item} " }
 
 
 puts "Enter value from 1-9:"
