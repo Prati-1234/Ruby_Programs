@@ -109,6 +109,7 @@ class CandyCrush
                
                     if $count==27
                     exit
+                   
                     end
         end
        
