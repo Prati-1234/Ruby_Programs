@@ -12,7 +12,7 @@ class CandyCrush
         row=gets.chomp.to_i
         puts "Enter index col:"
         col=gets.chomp.to_i
-        if $array[row][col] == 0 || nil
+        if $array[row][col] == nil || 0
            $array[row][col]=array_elements
     
         if      $array[row][col] == $array[row][col-1] && $array[row][col] == $array[row][col-2]
@@ -95,29 +95,36 @@ class CandyCrush
                 $array[row-1][col] = nil
                 $array[row-2][col] = nil
                 show_array
+        end
         else
             puts "No nil and zero elements in array."
         end
-        $count=0
-    for i in 0..$array.size-1
-        for j in 0..$array.size-1
-                if $array[i][j]!=0
+end
+        
+        def exit_array
+            $count=0
+            for row in 0..$array.size-1
+                for col in 0..$array.size-1
+                        if $array[row][col]==nil
+                           $count=$count+1
+                        end
+                end
+            end
+                if $count==27
+                exit
+                end
         end
-    end
-    if $count==36
-        exit
-    end
-    end
     
+    
+
 end
-end
-end
-def show_array
-    $array.each_with_index { |item, idx| puts "#{item} " }
-end
+        def show_array
+        $array.each_with_index { |item, idx| puts "#{item} " }
+        end
 
 
 end
 candy=CandyCrush.new
 candy.assign_data
 candy.show_array
+candy.exit_array
