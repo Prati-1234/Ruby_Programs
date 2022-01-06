@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <fieldset>
+        <legend>REGISTRATION FORM</legend>
+  <form action="backend.php" method="post">
+      <div>
+  <label for="name">Name</label>
+  <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <div>
+  <label for="email">Email</label>
+  <input type="email" name="myEmail" id="email" required>
+</div>
+<br>
+<div>
+<label for="password">Password</label>
+<input type="password" name="pass" id="password" required>
+</div>
+<br>
+<div>
+    <label for="phone">Phone</label>
+    <input type="text" name="phone" id="phone">
+</div>
+<br>
+<div>
+   <label for="date">DOB</label>
+   <input type="date" name="date" id="date">
+</div>
+<br>
+<div>
+    <h3>Gender</h3>
+    <label for="male">Male</label>
+   <input type="radio" name="myGender" id="male"> 
+   <label for="female">Female</label>
+   <input type="radio" name="myGender" id="female">
+ </div>
+ <br>
+ <div>
+    <label for="city">City</label>
+    <select name="city" id="city">
+        <optgroup label="Maharashtra">
+
+        
+        <option value="pune" selected>Pune</option>
+        <option value="mumbai" >Mumbai</option>
+    </optgroup>
+    <optgroup label="Delhi">
+        <option value="aagra">Aagra</option>
+        <option value="mathura">Mathura</option>
+
+    </optgroup>
+    </select>
+    
+    </div>
+    <br>
+ <div>
+    <label for="address">Address</label>
+    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+  </div>
+  <br>
+<div>
+    <h3>Skills</h3>
+    <label for="skill1">C</label>
+    <input type="checkbox" name="myskill" id="skill1">
+    <label for="skill2">C++</label>
+    <input type="checkbox" name="myskill" id="skill2">
+    <label for="skill3">Java</label>
+    <input type="checkbox" name="myskill" id="skill3">
+    <label for="skill4">MySQL</label>
+    <input type="checkbox" name="myskill" id="skill4">
+</div>
+<br>
+<div>
+    <h3>Tools and OS</h3>
+    <label for="s1">Eclipse</label>
+    <input type="checkbox" name="myskill" id="s1">
+    <label for="s2">VS Code</label>
+    <input type="checkbox" name="myskill" id="s2">
+    <label for="s3">MS Excel</label>
+    <input type="checkbox" name="myskill" id="s3">
+    <label for="s4">MS Word</label>
+    <input type="checkbox" name="myskill" id="s4">
+</div>
+<br>
+<div>
+    <div>
+<h3>Data list:choose your browser</h3>
+
+    </div>
+<label for="color">color</label>
+<input type="color" name="m" id="color">
+
+</div>
+<br>
+<div>
+    <h4>File:</h4>
+    <label for="file">Upload Your documents</label>
+    <input type="file" name="" id="file">
+    </div>
+    <br>
+<div>
+    <h4>How much percentage you know about html and css</h4>
+    <input type="range" name="" id="">
+    </div>
+    <br>
+    <div>
+        <label for="url">URL</label>
+        <input type="url" name="myall" id="url">
+        
+        </div>
+        <br>
+        <div>
+            <label for="search">search for latest jobs</label>
+            <input type="search" name="" id="search">
+            
+            </div>
+            <br>
+           
+<div>
+    <input type="submit" value="Submit"> <input type="reset" value="Reset">
+</div>
+
+
+    </form>
+</fieldset>
+</body>
+</html>
