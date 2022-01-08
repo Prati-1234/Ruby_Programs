@@ -8,40 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
     <fieldset>
         <legend>REGISTRATION FORM</legend>
-  <form action="backend.php" method="post">
+  <form action="\backend.php" method="post">
       <div>
-  <label for="name">Name</label>
-  <input type="text" name="myName" id="name">
+  <label for="name">Name &nbsp; &nbsp; &nbsp;</label>
+  <input type="text" name="myName" id="name" placeholder="enter your name">
     </div>
     <br>
     <div>
-  <label for="email">Email</label>
-  <input type="email" name="myEmail" id="email" required>
+  <label for="email">Email &nbsp; &nbsp; &nbsp;</label>
+  <input type="email" name="myEmail" id="email" placeholder="enter your email" required>
 </div>
 <br>
 <div>
 <label for="password">Password</label>
-<input type="password" name="pass" id="password" required>
+<input type="password" name="pass" id="password" placeholder="enter password" required>
 </div>
 <br>
 <div>
-    <label for="phone">Phone</label>
-    <input type="text" name="phone" id="phone">
+    <label for="phone">Phone &nbsp; &nbsp;</label>
+    <input type="text" name="phone" id="phone" placeholder="enter phone number">
 </div>
 <br>
 <div>
-   <label for="date">DOB</label>
+   <label for="date">DOB &nbsp; &nbsp; &nbsp;</label>
    <input type="date" name="date" id="date">
 </div>
 <br>
 <div>
     <h3>Gender</h3>
-    <label for="male">Male</label>
+    <label for="male" id="l1">Male</label>
    <input type="radio" name="myGender" id="male"> 
-   <label for="female">Female</label>
+   <label for="female" id="l2">Female</label>
    <input type="radio" name="myGender" id="female">
  </div>
  <br>
@@ -64,7 +64,7 @@
     </div>
     <br>
  <div>
-    <label for="address">Address</label>
+    <label for="address">Address &nbsp;</label>
     <textarea name="address" id="address" cols="30" rows="10"></textarea>
   </div>
   <br>
@@ -126,12 +126,13 @@
             </div>
             <br>
            
-<div>
-    <input type="submit" value="Submit"> <input type="reset" value="Reset">
+<div id="btn">
+    <input type="submit" value="Register"> <input type="reset" value="Reset">
 </div>
 
 
     </form>
 </fieldset>
+</div>
 </body>
 </html>

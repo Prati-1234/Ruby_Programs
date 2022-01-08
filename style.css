@@ -1,11 +1,86 @@
 body{
     background-color: lightblue;
-    
+    margin: 50px;
+    align-content: center;
 }
-h3{
-    color: lightslategray;
-    
+
+label{
+    font-size: 17px;
 }
-text{
-    background-color: magenta;
+input[type="text"]{
+    width:50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="date"]{
+    width:50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+select{
+    width:50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    font-size: 17px;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+input[type="email"]{
+    width:50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="password"]{
+    width:50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#l2{
+    margin-left: 120px;
+}
+input[type="submit"]{
+    width:20%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 17px;
+    background-color: greenyellow;
+}
+input[type="reset"]{
+    width:20%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 4px;
+    background-color: greenyellow;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+#l1{
+   margin-left: 80px;
 }
