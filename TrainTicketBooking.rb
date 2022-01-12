@@ -119,9 +119,13 @@ class TrainBooking
           end
      end
      def cancel_ticket
-          puts "Enter ticket number you want to cancel"
-          ticket_num=gets.chom.to_i
-          if ticket_num==$ticket_number
+          puts "Enter username and password to cancel ticket."
+          puts "#{$password}"
+          puts "Username:"
+          $cancel_username=gets.chomp.to_i
+          puts "Password:"
+          $cancel_password=gets.chomp.to_i
+          if $cancel_username==$name || $cancel_password==$password
                file = File.open("traindetails.txt" , "r+")
                File.delete(file)
                puts "Ticket Canceled Succesfully...!"
