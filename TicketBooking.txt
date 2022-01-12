@@ -1,1 +1,0 @@
-{"source"=>"Pune", "destination"=>"Mumbai", "day"=>2, "month"=>3, "Ticket_number"=>nil, "Passanger age"=>23, "Mobile Number"=>9876554222}

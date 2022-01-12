@@ -1,3 +1,4 @@
+require 'io/console'
 class TrainBooking
      
      def main_menu
@@ -28,18 +29,18 @@ class TrainBooking
                puts "Enter mobile number:"
                $number=gets.chomp.to_i
                puts "Enter password:"
-               $password=gets.chomp
+               $password=STDIN.noecho(&:gets).chomp
                if (($username==nil) || ($username.length<=4)) 
                     puts "Please enter your full username"
                     $username=gets.chomp
                elsif ($password.length<=4)
                     puts "Enter password upto 5 digits with special character"
-                    $password=gets.chomp
+                    $password=STDIN.noecho(&:gets).chomp
                elsif  ($number > 10)
                     puts "Enter valid phone number"
                     $number=gets.chomp.to_i
                     puts "Re-enter password:"
-                    pass=gets.chomp
+                    pass=STDIN.noecho(&:gets).chomp
                     if (pass==$password)
                          puts "Password match.." 
                          puts "Sucessfully account created."
@@ -56,7 +57,7 @@ class TrainBooking
           puts "Enter your username"
           $login_name=gets.chomp
           puts "Enter password"
-          $login_pass=gets.chomp 
+          $login_pass=STDIN.noecho(&:gets).chomp
           if ($login_name==$username) && ($login_pass==$password)
                puts "Sucessfully login!!!"
                puts
@@ -104,7 +105,7 @@ class TrainBooking
           puts 
           puts "Enter Username and password for ticket booking"
           log_name=gets.chomp
-          log_password=gets.chomp
+          log_password=STDIN.noecho(&:gets).chomp
           if (log_name==$login_name && log_password==$login_pass)
                puts "Ticket booked sucessfully!!!!"
                puts "Enjoy your journey.."
@@ -120,15 +121,15 @@ class TrainBooking
      end
      def cancel_ticket
           puts "Enter username and password to cancel ticket."
-          puts "#{$password}"
           puts "Username:"
-          $cancel_username=gets.chomp.to_i
+          $cancel_username=gets.chomp
           puts "Password:"
-          $cancel_password=gets.chomp.to_i
+          $cancel_password=STDIN.noecho(&:gets).chomp
           if $cancel_username==$name || $cancel_password==$password
-               file = File.open("traindetails.txt" , "r+")
+               file = File.open("TicketBooking.txt")
                File.delete(file)
                puts "Ticket Canceled Succesfully...!"
+               exit
           else
                puts "Please try again!!!"
                main_menu
